@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(222, 42, 222);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.avatar {
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid rgb(184, 161, 205);
+}
+
+.btn {
+    display: block;
+    background-color: #e07bff;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0f3460;
+    transform: scale(1.02);
+}
+
+/* DESAFIO: Estilize o botão especial */
+.destaque {
+
+}

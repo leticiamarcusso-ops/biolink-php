@@ -43,6 +43,9 @@ $imagem = "https://i.pinimg.com/736x/8c/d8/24/8cd824b3db17994bf9cdbdb8f1191d9f.j
             }
             ?>
         </div>
+         <div class="area-contato">
+            <a href="contato.php" class="btn-msg">📧 Mandar Mensagem</a>
+        </div>
     </div>
 
     
