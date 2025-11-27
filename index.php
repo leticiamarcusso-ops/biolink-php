@@ -1,8 +1,8 @@
 <?php
 
 $nome = "Leticia Magre";
-$bio = "linda e legal 💕";
-$imagem = "https://i.pinimg.com/736x/8c/d8/24/8cd824b3db17994bf9cdbdb8f1191d9f.jpg";
+$bio = "linda e legal<br> @leticiamagredesign💕";
+$imagem = "https://lh3.googleusercontent.com/a/ACg8ocIRCONmp9jwb_DRwfl6QFmS4UdmEm_Q172qz7IlrGLisbhzzuXW=s360-p-k-rw-no";
  $links = [
         "Instagram" => "https://instagram.com/leticia.magre",
         "WhatsApp"  => "https://wa.me/17991795250",
