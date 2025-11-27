@@ -6,7 +6,7 @@ $imagem = "https://i.pinimg.com/736x/8c/d8/24/8cd824b3db17994bf9cdbdb8f1191d9f.j
  $links = [
         "Instagram" => "https://instagram.com/leticia.magre",
         "WhatsApp"  => "https://wa.me/17991795250",
-        "Meu Jogo Favorito" => "EgZjaHJvbWUqCggCEC4YsQMYgAQyBggAEEUYOTINCAEQLhiDARixAxiABDIKCAIQLhixAxiABDIKCAMQABixAxiABDIKCAQQABixAxiABDITCAUQLhiDARivARjHARixAxiABDIHCAYQABiABDIGCAcQRRg80gEINzY3N2owajeoAgiwAgHxBfRgecbz4ooF",
+        "Meu Jogo Favorito" => "https://www.playpkxd.com/",
         "Música do Momento" => "https://www.youtube.com/watch?v=lV2plyhSRBU&list=RDlV2plyhSRBU&start_radio"
  ];
 
