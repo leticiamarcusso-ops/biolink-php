@@ -1,27 +1,59 @@
-<?php
-
-$nome = "Leticia";
-$bio = "linda e legal";
-$imagem = "https://i.pinimg.com/736x/8c/d8/24/8cd824b3db17994bf9cdbdb8f1191d9f.jpg";
-?>
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biolink de <?php echo $nome; ?></title>
+    <title>Fale Comigo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="container">
-        <img src="<?php echo $imagem; ?>" alt="Foto de perfil" class="avatar">
+        <h2>📬 Envie sua mensagem</h2>
 
-         <h1> <?php echo $nome; ?> </h1>
-        <p> <?php echo $bio; ?> </p>
+        <?php
+            // BUG 1: O formulário envia dados via POST (Envelope).
+            // Mas aqui estamos tentando ler GET (Cartão Postal).
+            // Troque $_GET por $_POST nas linhas abaixo.
+            if (isset($_POST['mensagem_usuario'])) {
+                
+                $nome = $_POST['nome_usuario'];
+                $msg  = $_POST['mensagem_usuario'];
 
-        <div class="lista-links"></div>
+                // DESAFIO DE SEGURANÇA:
+                // Se a mensagem estiver vazia, não aceite!
+                // Use a função empty($msg) dentro de um IF.
+                
+                // (Escreva seu IF aqui...)
+                if (empty($msg)) {
+                
+                    // Se estiver vazio:
+                    echo "<p class='erro'>❌ Erro: Você não escreveu nada!</p>";
+                
+
+                // (Escreva seu ELSE aqui...)
+
+                } else {
+                
+                    // Se tudo estiver certo:
+                    // BUG 2: O PHP exige ponto e vírgula no final do comando.
+                    echo "<p class='sucesso'>✅ Recebido! <b>$nome</b> disse: $msg</p>";
+                }
+                // (Feche as chaves aqui)
+            }
+        ?>
+
+        <form action="" method="POST">
+            <input type="text" name="nome_usuario" placeholder="Seu Nome..." class="campo-texto">
+            
+            <input type="text" name="mensagem_usuario" placeholder="Sua Mensagem..." class="campo-texto">
+            
+            <button type="submit">🚀 Enviar Agora</button>
+        </form>
+
+        <br>
+        <a href="index.php" class="btn-voltar">⬅️ Voltar ao Perfil</a>
     </div>
 
-    
 </body>
 </html>
